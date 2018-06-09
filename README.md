@@ -4,7 +4,6 @@
 a simple micro-library that develops a solution that simulates the delivery of notes when a client does a withdraw in a cash machine.
 
 
-
 #### Requirements
 
 - Always deliver the lowest number of possible notes
@@ -12,6 +11,7 @@ a simple micro-library that develops a solution that simulates the delivery of n
 - The client balance is infinite
 - Amount of notes is infinite
 - Available notes 100,00, 50,00, 20,00, 10,00 $
+
 
 #### Examples
 
@@ -26,7 +26,6 @@ a simple micro-library that develops a solution that simulates the delivery of n
 ## Install
 
 `npm i cash-machine-problem`
-
 
 
 ## Install locally
