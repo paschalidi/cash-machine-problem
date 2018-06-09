@@ -2,11 +2,13 @@
   "name": "cash-machine-problem",
   "version": "0.0.0-development",
   "description": "an simple solution for a cash machine problem",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "commit": "git-cz",
     "test": "mocha src/index.test.js -w",
     "test:single": "istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js",
+    "build": "babel --copy-files --out-dir dist --ignore *.test.js src",
+    "prebuild": "rimraf dist",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
@@ -19,12 +21,15 @@
   "author": "paschalidi",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "chai": "4.1.2",
     "commitizen": "2.10.1",
     "cz-conventional-changelog": "^2.1.0",
     "ghooks": "2.0.4",
     "istanbul": "0.4.5",
     "mocha": "5.2.0",
+    "rimraf": "2.6.2",
     "semantic-release": "^15.5.1",
     "travis-deploy-once": "^5.0.0"
   },
@@ -32,6 +37,10 @@
     "type": "git",
     "url": "https://github.com/paschalidi/cash-machine-problem.git"
   },
+  "files":[
+    "dist",
+    "REAMDE.md"
+  ],
   "config": {
     "ghooks": {
       "pre-commit": "npm run test:single"
@@ -39,5 +48,10 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   }
 }
