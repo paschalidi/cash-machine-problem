@@ -1,1 +1,3 @@
-"use strict"
+'use strict';
+
+export const calculateNotes = (value) => true;
