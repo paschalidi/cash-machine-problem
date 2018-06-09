@@ -55,3 +55,9 @@ describe('calculate(580)',
       expect(calculateNotes(590)).to.have.ordered.members([5, 1, 2, 0]);
     })
 );
+describe('calculate(-10)',
+  () => it('should return: throw InvalidArgumentException',
+    () => {
+      expect(calculateNotes(-10)).to.be.an('string');
+    })
+);
