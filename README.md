@@ -1,5 +1,4 @@
 # cash-machine-problem[![Travis](https://img.shields.io/travis/paschalidi/cash-machine-problem.svg)](https://travis-ci.org/paschalidi/cash-machine-problem)
-[![Travis](https://img.shields.io/travis/paschalidi/cash-machine-problem.svg)](https://travis-ci.org/paschalidi/cash-machine-problem)
 
 a simple micro-library that develops a solution that simulates the delivery of notes when a client does a withdraw in a cash machine.
 
