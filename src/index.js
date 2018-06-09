@@ -1,3 +1,3 @@
 'use strict';
 
-export const calculateNotes = (value) => false;
+export const calculateNotes = (value) => true;
