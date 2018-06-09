@@ -7,12 +7,16 @@ export default (value) => {
   if (value % minNote === 0 && value >= 0)
     return notes.map(index => {
         let originalValue = value;
-        value = value - Math.floor(value / index) * index;
-        return Math.floor(originalValue / index);
+        value = value - getIntFromDivision(value, index);
+        return getIntFromDivision(originalValue, index);
       }
     );
+
   if (value === null)
     return [];
 
   return 'throw InvalidArgumentException';
 };
+
+const getIntFromDivision = (number, divisor) => Math.floor(number / divisor) * divisor;
+

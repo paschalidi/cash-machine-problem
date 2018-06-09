@@ -21,39 +21,33 @@ describe('calculate(0)',
     })
 );
 describe('calculate(100)',
-  () => it('should return [1,0,0,0]',
+  () => it('should return [100, 0, 0, 0]',
     () => {
-      expect(calculateNotes(100)).to.have.ordered.members([1, 0, 0, 0]);
+      expect(calculateNotes(100)).to.have.ordered.members([100, 0, 0, 0]);
     })
 );
 describe('calculate(550)',
-  () => it('should return [5,1,0,0]',
+  () => it('should return [500, 50, 0, 0]',
     () => {
-      expect(calculateNotes(550)).to.have.ordered.members([5, 1, 0, 0]);
-    })
-);
-describe('calculate(1550)',
-  () => it('should return [15,1,0,0]',
-    () => {
-      expect(calculateNotes(550)).to.have.ordered.members([5, 1, 0, 0]);
+      expect(calculateNotes(550)).to.have.ordered.members([500, 50, 0, 0]);
     })
 );
 describe('calculate(1570)',
-  () => it('should return [15,1,1,0]',
+  () => it('should return [500, 50, 20, 0]',
     () => {
-      expect(calculateNotes(570)).to.have.ordered.members([5, 1, 1, 0]);
+      expect(calculateNotes(570)).to.have.ordered.members([500, 50, 20, 0]);
     })
 );
 describe('calculate(580)',
-  () => it('should return [5,1,1,1]',
+  () => it('should return [500, 50, 20, 10]',
     () => {
-      expect(calculateNotes(580)).to.have.ordered.members([5, 1, 1, 1]);
+      expect(calculateNotes(580)).to.have.ordered.members([500, 50, 20, 10]);
     })
 );
-describe('calculate(580)',
-  () => it('should return [5,1,2,0]',
+describe('calculate(590)',
+  () => it('should return [500, 50, 20, 0]',
     () => {
-      expect(calculateNotes(590)).to.have.ordered.members([5, 1, 2, 0]);
+      expect(calculateNotes(590)).to.have.ordered.members([500, 50, 40, 0]);
     })
 );
 describe('calculate(-10)',
