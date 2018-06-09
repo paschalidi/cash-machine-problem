@@ -1,0 +1,27 @@
+{
+  "name": "cash-machine-problem",
+  "version": "0.0.0-development",
+  "description": "an simple solution for a cash machine problem",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release"
+  },
+  "keywords": [
+    "cash",
+    "machine",
+    "algorythmic",
+    "problem"
+  ],
+  "author": "paschalidi",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "4.1.2",
+    "mocha": "5.2.0",
+    "semantic-release": "^15.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paschalidi/machine-problem.git"
+  }
+}
