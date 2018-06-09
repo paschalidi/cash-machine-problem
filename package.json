@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha src/index.test.js -w",
-    "semantic-release": "semantic-release"
+    "test:single": "mocha src/index.test.js",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "keywords": [
     "cash",
@@ -17,10 +19,18 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "4.1.2",
-    "mocha": "5.2.0"
+    "ghooks": "2.0.4",
+    "mocha": "5.2.0",
+    "semantic-release": "^15.5.1",
+    "travis-deploy-once": "^5.0.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/paschalidi/cash-machine-problem.git"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test:single"
+    }
   }
 }
