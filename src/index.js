@@ -1,6 +1,6 @@
 'use strict';
 
-export const calculateNotes = (value) => {
+export default (value) => {
   const notes = [100, 50, 20, 10];
   const minNote = notes[notes.length - 1];
 
@@ -16,4 +16,3 @@ export const calculateNotes = (value) => {
 
   return 'throw InvalidArgumentException';
 };
-export default calculateNotes;

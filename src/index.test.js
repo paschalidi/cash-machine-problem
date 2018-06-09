@@ -1,5 +1,6 @@
 const expect = require('chai').expect;
-const { calculateNotes } = require('./index.js');
+import calculateNotes from '.';
+
 
 describe('calculate(null)',
   () => it('should return: []',
