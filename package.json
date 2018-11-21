@@ -1,7 +1,7 @@
 {
   "name": "cash-machine-problem",
   "version": "0.0.0-development",
-  "description": "an simple solution for a cash machine problem",
+  "description": "an simple solution for a cash machine problem.",
   "main": "dist/index.js",
   "scripts": {
     "commit": "git-cz",
